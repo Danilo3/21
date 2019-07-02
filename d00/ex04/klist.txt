@@ -1,0 +1,6 @@
+Credentials cache: API:10052
+        Principal: ayellin@21-SCHOOL.RU
+
+  Issued                Expires               Principal
+Jul  2 06:58:42 2019  Jul  2 16:58:42 2019  krbtgt/21-SCHOOL.RU@21-SCHOOL.RU
+Jul  2 06:58:43 2019  Jul  2 16:58:42 2019  ldap/ldap-master.21-school.ru@21-SCHOOL.RU
