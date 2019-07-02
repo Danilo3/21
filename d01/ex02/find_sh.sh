@@ -1,1 +1,1 @@
-find . -name "*.sh" | xargs basename
+find . -name "*.sh"| xargs basename | sed "s/\.sh//"
