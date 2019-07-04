@@ -6,7 +6,7 @@
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 03:50:27 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 03:52:56 by ayellin          ###   ########.fr       */
+/*   Updated: 2019/07/04 06:21:10 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	ft_is_negative(int n)
 	if (n >= 0)
 	{
 		ft_putchar('P');
-	} else if (n < 0)
+	}
+	else
 	{
 		ft_putchar('N');
 	}

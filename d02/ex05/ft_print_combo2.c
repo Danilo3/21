@@ -6,36 +6,39 @@
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 03:56:13 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 04:34:44 by ayellin          ###   ########.fr       */
+/*   Updated: 2019/07/04 06:58:45 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_putchar(char c);
 
-void ft_print_comb(void)
+void ft_print_comb2(void)
 {
-	int n;
+	int n1;
+	int n2;
 	int a;
 	int b;
 	int c;
-
-	n = 12;
-	while (n <= 789)
+	int d;
+	
+	n1 = 0;
+	n2 = 1;
+	while (n1 != 98 && n2 != 99)
 	{
-		a = n / 100;
-		b = ( n / 10 ) % 10;
-		c = n % 10;
+		a = n1 / 10;
+		b = n1 % 10;
+		c = n2 / 10;
+		d = n1 % 10;
 
-		if (a < b && b < c)
-		{
-			ft_putchar(48 + a);
-			ft_putchar(48 + b);
-			ft_putchar(48 + c);
-			if (n != 789)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-		}		
-		n++;
+		n2++;
+		if (n2 == 100) {
+			n1 += 1;
+			n2 = n1 + 1;
+		}
+		ft_putchar(a + 48);
+		ft_putchar(b + 48);
+		ft_putchar(c + 48);
+		ft_putchar(d + 48);
+		
+			
 	}
 }

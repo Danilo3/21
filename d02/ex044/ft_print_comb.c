@@ -6,7 +6,7 @@
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 03:56:13 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 05:05:02 by ayellin          ###   ########.fr       */
+/*   Updated: 2019/07/04 06:57:51 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 void	ft_putchar(char c);
@@ -18,24 +18,28 @@ void ft_print_comb(void)
 	int b;
 	int c;
 
-	n = 12;
-	while (n <= 789)
+	a = 0;
+	b = 0;
+	c = 0;
+	while(a < 10)
 	{
-		a = n / 100;
-		b = ( n / 10 ) % 10;
-		c = n % 10;
-		
-		if (a < b && b < c)
+		while (b < 10) 
 		{
-			ft_putchar(48 + a);
-			ft_putchar(48 + b);
-			ft_putchar(48 + c);
-			if (n != 789)
-			{
-				ft_putchar(',');
-				ft_putchar(' ');
+			while (c < 10)
+		   	{
+				
+				if (a != b && b !=c && c != a)
+				{
+					ft_putchar(a + 48);
+					ft_putchar(b + 48);
+					ft_putchar(c + 48);
+					ft_putchar(',');
+					ft_putchar(' ');
+				}
+				c++;
 			}
-		}		
-		n++;
+			b++;	
+		}
+		a++;
 	}
 }
