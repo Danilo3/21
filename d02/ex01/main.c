@@ -6,14 +6,14 @@
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/03 18:23:41 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 04:43:11 by ayellin          ###   ########.fr       */
+/*   Updated: 2019/07/04 03:37:32 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_alphabet(void);
+void	ft_print_reverse_alphabet(void);
 int	main(void)
 {
 	
-	ft_print_alphabet();
-	return 0;
+	ft_print_reverse_alphabet();
+	return (0);
 }

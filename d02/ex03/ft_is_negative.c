@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/03 18:23:41 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 04:43:11 by ayellin          ###   ########.fr       */
+/*   Created: 2019/07/04 03:50:27 by ayellin           #+#    #+#             */
+/*   Updated: 2019/07/04 03:52:56 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_alphabet(void);
-int	main(void)
+void	ft_putchar(char ch);
+
+void	ft_is_negative(int n)
 {
-	
-	ft_print_alphabet();
-	return 0;
+	if (n >= 0)
+	{
+		ft_putchar('P');
+	} else if (n < 0)
+	{
+		ft_putchar('N');
+	}
 }

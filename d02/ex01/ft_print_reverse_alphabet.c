@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/03 18:23:41 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 04:43:11 by ayellin          ###   ########.fr       */
+/*   Created: 2019/07/04 03:36:18 by ayellin           #+#    #+#             */
+/*   Updated: 2019/07/04 03:40:02 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_alphabet(void);
-int	main(void)
+void	ft_putchar(char ch);
+
+void ft_print_reverse_alphabet(void)
 {
-	
-	ft_print_alphabet();
-	return 0;
+	char ch;
+
+	ch = 'z';
+	while (ch >= 'a')
+	{
+		ft_putchar(ch);
+		ch--;
+	}
+	ft_putchar('\n');
 }
