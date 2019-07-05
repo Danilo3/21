@@ -6,11 +6,11 @@
 /*   By: ayellin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/04 03:24:24 by ayellin           #+#    #+#             */
-/*   Updated: 2019/07/04 04:53:36 by ayellin          ###   ########.fr       */
+/*   Updated: 2019/07/04 16:44:47 by ayellin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char ch);
+int	ft_putchar(char ch);
 
 void	ft_print_alphabet(void)
 {
@@ -22,7 +22,7 @@ void	ft_print_alphabet(void)
 		ft_putchar(ch);
 		ch++;
 	}
-	ft_putchar('\n');
+	//ft_putchar('\n');
 } 
 
 
